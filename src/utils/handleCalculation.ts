@@ -3,7 +3,6 @@ import { ExpressionParam } from "nerdamer-prime";
 function setCalculoDerivado(varE: ExpressionParam | undefined, varX: string = 'x', varT: string = '1'){
     if (varE && varX ){
       const x = window.nerdamer.diff(varE, varX, Number(varT));
-      console.log(window.nerdamer)
       return x.expand().toTeX()
     }
 
