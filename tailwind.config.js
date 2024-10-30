@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'Roboto-Mono': '"Roboto Mono", serif'
+        'Work-Sans': '"Work Sans", sans-serif'
       }
     },
   },

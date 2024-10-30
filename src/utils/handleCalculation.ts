@@ -3,9 +3,8 @@ import { ExpressionParam } from "nerdamer-prime";
 function setCalculoDerivado(varE: ExpressionParam | undefined, varX: string = 'x', varT: string = '1'){
     if (varE && varX ){
       const x = window.nerdamer.diff(varE, varX, Number(varT));
-      return x.expand().toTeX()
+      return x.toTeX()
     }
-
   }
 
   function setCalculoIntegral(varE: ExpressionParam | undefined, varX: string = 'x', varStart?: string, varEnd?: string){
